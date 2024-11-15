@@ -28,11 +28,11 @@ namespace AtividadePolimorfismo
             produtosBase.Add(videogameBase);
 
             //INICIALIZANDO OBJETOS PRODUTOS POR SEUS TIPOS(SUBCLASSES)
-            Produto televisor = new Televisor(0, null, 0);
-            Produto dvd = new DVD(0, null, 0);
-            Produto guitarra = new Guitarra(0, null, 0);
-            Produto videogame = new Videogame(0, null, 0);
-            Produto notebook = new Notebook(0, null, 0);
+            Produto televisor = new Televisor(0, null, 0, "televisor");
+            Produto dvd = new DVD(0, null, 0, "dvd");
+            Produto guitarra = new Guitarra(0, null, 0, "guitarra");
+            Produto videogame = new Videogame(0, null, 0, "videogame");
+            Produto notebook = new Notebook(0, null, 0, "notebook");
 
             string res = "N";
 
