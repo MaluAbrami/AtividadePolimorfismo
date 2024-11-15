@@ -20,6 +20,13 @@ namespace AtividadePolimorfismo
             Produto videogameBase = new Videogame(4, "Playstation 5", 3399.90);
             Produto notebookBase = new Notebook(5, "Notebook Gamer Dell", 4589.90);
 
+            List<Produto> produtosBase = new List<Produto>();   
+            produtosBase.Add(televisorBase);
+            produtosBase.Add(notebookBase);
+            produtosBase.Add(dvdBase);
+            produtosBase.Add(guitarraBase);
+            produtosBase.Add(videogameBase);
+
             //INICIALIZANDO OBJETOS PRODUTOS POR SEUS TIPOS(SUBCLASSES)
             Produto televisor = new Televisor(0, null, 0);
             Produto dvd = new DVD(0, null, 0);
@@ -87,6 +94,11 @@ namespace AtividadePolimorfismo
                         }
                     case 2:
                         {
+                            foreach (Produto produto in produtosBase)
+                            {
+                                produto.reajustarPreco();
+                            }
+                            Console.WriteLine("Preço de todos os Produtos reajustado com sucesso!");
                             break;
                         }
                     case 3:
