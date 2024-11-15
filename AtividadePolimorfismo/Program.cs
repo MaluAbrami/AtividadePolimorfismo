@@ -114,6 +114,8 @@ namespace AtividadePolimorfismo
                         }
                     default:
                         {
+                            Console.WriteLine("Opção inválida!");
+                            Console.ReadLine();
                             break;
                         }
                 }
