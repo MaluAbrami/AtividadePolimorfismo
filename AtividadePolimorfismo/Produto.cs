@@ -11,6 +11,7 @@ namespace AtividadePolimorfismo
         private int id;
         private string name;
         private double price;
+        private string tipo;
 
         public int Id
         {
@@ -28,11 +29,18 @@ namespace AtividadePolimorfismo
             set { price = value; }
         }
 
-        public Produto(int id, string name, double price)
+        public string Tipo
+        {
+            get { return tipo; }
+            set { tipo = value; }
+        }
+
+        public Produto(int id, string name, double price, string tipo)
         {
             this.Id = id;
             this.Name = name;
             this.Price = price;
+            this.Tipo = tipo;
         }
 
         public abstract void reajustarPreco();
