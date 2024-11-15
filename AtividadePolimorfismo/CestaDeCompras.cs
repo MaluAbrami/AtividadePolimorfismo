@@ -32,7 +32,7 @@ namespace AtividadePolimorfismo
 
             foreach (Produto produto in Produtos)
             {
-                Console.WriteLine($"Produto: {produto.Name}\nValor: {produto.Price}\n");
+                Console.WriteLine($"Produto: {produto.Name}\nTipo do Produto: {produto.Tipo}\nValor: {produto.Price}\n");
             }
         }
 
