@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CestaDeCompras.cs" />
+    <Compile Include="DVD.cs" />
     <Compile Include="Guitarra.cs" />
     <Compile Include="Produto.cs" />
     <Compile Include="Program.cs" />
