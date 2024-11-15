@@ -14,11 +14,11 @@ namespace AtividadePolimorfismo
             CestaDeCompras cestaDeCompras = new CestaDeCompras();
 
             //INICIALIZANDO PRODUTOS DE BASE QUE PODERÃO TER SEUS VALORES REAJUSTADOS
-            Produto televisorBase = new Televisor(1, "Tv Samsung", 1099.90);
-            Produto dvdBase = new DVD(2, "DVD LG", 399.90);
-            Produto guitarraBase = new Guitarra(3, "Guitarra Gibson", 799.90);
-            Produto videogameBase = new Videogame(4, "Playstation 5", 3399.90);
-            Produto notebookBase = new Notebook(5, "Notebook Gamer Dell", 4589.90);
+            Produto televisorBase = new Televisor(1, "Tv Samsung", 1099.90, "televisor");
+            Produto dvdBase = new DVD(2, "DVD LG", 399.90, "dvd");
+            Produto guitarraBase = new Guitarra(3, "Guitarra Gibson", 799.90, "guitarra");
+            Produto videogameBase = new Videogame(4, "Playstation 5", 3399.90, "videogame");
+            Produto notebookBase = new Notebook(5, "Notebook Gamer Dell", 4589.90, "notebook");
 
             List<Produto> produtosBase = new List<Produto>();   
             produtosBase.Add(televisorBase);
