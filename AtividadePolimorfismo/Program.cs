@@ -54,31 +54,46 @@ namespace AtividadePolimorfismo
                             {
                                 case 1:
                                     {
-                                        televisor = televisorBase;
+                                        televisor.Id = televisorBase.Id;
+                                        televisor.Name = televisorBase.Name;
+                                        televisor.Price = televisorBase.Price;
+
                                         cestaDeCompras.AdicionarProdutoNaCesta(televisor);
                                         break;
                                     }
                                 case 2:
                                     {
-                                        notebook = notebookBase;
+                                        notebook.Id = notebookBase.Id;
+                                        notebook.Name = notebookBase.Name;
+                                        notebook.Price = notebookBase.Price;
+
                                         cestaDeCompras.AdicionarProdutoNaCesta(notebook);
                                         break;
                                     }
                                 case 3:
                                     {
-                                        dvd = dvdBase;
+                                        dvd.Id = dvdBase.Id;
+                                        dvd.Name = dvdBase.Name;
+                                        dvd.Price = dvdBase.Price;
+
                                         cestaDeCompras.AdicionarProdutoNaCesta(dvd);
                                         break;
                                     }
                                 case 4:
                                     {
-                                        guitarra = guitarraBase;
+                                        guitarra.Id = guitarraBase.Id;
+                                        guitarra.Name = guitarraBase.Name;  
+                                        guitarra.Price = guitarraBase.Price;
+
                                         cestaDeCompras.AdicionarProdutoNaCesta(guitarra);
                                         break;
                                     }
                                 case 5:
                                     {
-                                        videogame = videogameBase;
+                                        videogame.Id = videogameBase.Id;
+                                        videogame.Name = videogameBase.Name;
+                                        videogame.Price = videogameBase.Price;
+
                                         cestaDeCompras.AdicionarProdutoNaCesta(videogame);
                                         break;
                                     }
