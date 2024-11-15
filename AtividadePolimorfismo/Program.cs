@@ -27,76 +27,84 @@ namespace AtividadePolimorfismo
             Produto videogame = new Videogame(0, null, 0);
             Produto notebook = new Notebook(0, null, 0);
 
-            Console.WriteLine("-------------Menu-------------");
-            Console.WriteLine("1 - Incluir um dos produtos na cesta\n2 - Reajustar o preço de todos os produtos\n3 - Exibir cesta de produtos\n4 - Exibir total da compra");
-            Console.WriteLine("Selecione uma opção: ");
-            int op = Convert.ToInt32(Console.ReadLine());
+            string res = "N";
 
-            switch (op)
+            while (res != "S")
             {
-                case 1:
-                    {
-                        Console.WriteLine("Selecione o tipo do Produto que deseja incluir na cesta:\n1-Televisor\n2-Notebook\n3-DVD\n4-Guitarra\n5-Videogame\n");
-                        int tipoProduto = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("-------------Menu-------------");
+                Console.WriteLine("1 - Incluir um dos produtos na cesta\n2 - Reajustar o preço de todos os produtos\n3 - Exibir cesta de produtos\n4 - Exibir total da compra");
+                Console.WriteLine("Selecione uma opção: ");
+                int op = Convert.ToInt32(Console.ReadLine());
 
-                        switch (tipoProduto)
+                switch (op)
+                {
+                    case 1:
                         {
-                            case 1:
-                                {
-                                    televisor = televisorBase;
-                                    cestaDeCompras.AdicionarProdutoNaCesta(televisor);
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    notebook = notebookBase;
-                                    cestaDeCompras.AdicionarProdutoNaCesta(notebook);
-                                    break;
-                                }
-                            case 3:
-                                {
-                                    dvd = dvdBase;
-                                    cestaDeCompras.AdicionarProdutoNaCesta(dvd);
-                                    break;
-                                }
-                            case 4:
-                                {
-                                    guitarra = guitarraBase;
-                                    cestaDeCompras.AdicionarProdutoNaCesta(guitarra);
-                                    break;
-                                }
-                            case 5:
-                                {
-                                    videogame = videogameBase;
-                                    cestaDeCompras.AdicionarProdutoNaCesta(videogame);
-                                    break;
-                                }
-                            default:
-                                {
-                                    Console.WriteLine("Tipo de produto não existe");
-                                    Console.ReadLine();
-                                    break;
-                                }
-                        }
+                            Console.WriteLine("Selecione o tipo do Produto que deseja incluir na cesta:\n1-Televisor\n2-Notebook\n3-DVD\n4-Guitarra\n5-Videogame\n");
+                            int tipoProduto = Convert.ToInt32(Console.ReadLine());
 
-                        break;
-                    }
-                case 2:
-                    {
-                        break;
-                    }
-                case 3:
-                    {
-                        break;
-                    }
-                case 4:
-                    {
-                        break;
-                    }
-                default:
-                    {
-                        break;
-                    }
+                            switch (tipoProduto)
+                            {
+                                case 1:
+                                    {
+                                        televisor = televisorBase;
+                                        cestaDeCompras.AdicionarProdutoNaCesta(televisor);
+                                        break;
+                                    }
+                                case 2:
+                                    {
+                                        notebook = notebookBase;
+                                        cestaDeCompras.AdicionarProdutoNaCesta(notebook);
+                                        break;
+                                    }
+                                case 3:
+                                    {
+                                        dvd = dvdBase;
+                                        cestaDeCompras.AdicionarProdutoNaCesta(dvd);
+                                        break;
+                                    }
+                                case 4:
+                                    {
+                                        guitarra = guitarraBase;
+                                        cestaDeCompras.AdicionarProdutoNaCesta(guitarra);
+                                        break;
+                                    }
+                                case 5:
+                                    {
+                                        videogame = videogameBase;
+                                        cestaDeCompras.AdicionarProdutoNaCesta(videogame);
+                                        break;
+                                    }
+                                default:
+                                    {
+                                        Console.WriteLine("Tipo de produto não existe");
+                                        Console.ReadLine();
+                                        break;
+                                    }
+                            }
+
+                            break;
+                        }
+                    case 2:
+                        {
+                            break;
+                        }
+                    case 3:
+                        {
+                            break;
+                        }
+                    case 4:
+                        {
+                            break;
+                        }
+                    default:
+                        {
+                            break;
+                        }
+                }
+
+                Console.WriteLine("Encerrar programa?(S/N)\n");
+                res = Console.ReadLine().ToUpper();
             }
         }
     }
