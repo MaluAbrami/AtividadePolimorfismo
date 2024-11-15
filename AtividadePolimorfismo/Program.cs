@@ -103,6 +103,7 @@ namespace AtividadePolimorfismo
                         }
                     case 3:
                         {
+                            cestaDeCompras.ExibirProdutosDaCesta();
                             break;
                         }
                     case 4:
