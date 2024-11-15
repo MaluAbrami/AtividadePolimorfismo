@@ -23,6 +23,7 @@ namespace AtividadePolimorfismo
                 new Videogame(5, "Playstation 5", 3399.90, "videogame")
             };
 
+            //AINDA NÃO CONSEGUI FAZER COM QUE OS PREÇOS NÃO SEJAM ALTERADOS NA CESTA DE COMPRAS
             Produto televisor = new Televisor(0, null, 0, "televisor");
             Produto dvd = new DVD(0, null, 0, "dvd");
             Produto guitarra = new Guitarra(0, null, 0, "guitarra");
