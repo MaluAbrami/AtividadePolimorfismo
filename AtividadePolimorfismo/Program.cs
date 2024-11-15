@@ -108,6 +108,8 @@ namespace AtividadePolimorfismo
                         }
                     case 4:
                         {
+                            double valorTotal = cestaDeCompras.CalcularValorTotal();
+                            Console.WriteLine($"O valor total da sua cesta de compras é de R${valorTotal}");
                             break;
                         }
                     default:
