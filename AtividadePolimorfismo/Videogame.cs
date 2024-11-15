@@ -14,7 +14,7 @@ namespace AtividadePolimorfismo
 
         public override void reajustarPreco()
         {
-            throw new NotImplementedException();
+            this.Price += this.Price * 0.015;
         }
     }
 }
