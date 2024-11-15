@@ -13,15 +13,19 @@ namespace AtividadePolimorfismo
         {
             CestaDeCompras cestaDeCompras = new CestaDeCompras();
 
-            // Inicializando produtos base
-            List<Produto> produtosBase = new List<Produto>
-            {
-                new Televisor(1, "Tv Samsung", 1099.90, "televisor"),
-                new Notebook(2, "Notebook Gamer Dell", 4589.90, "notebook"),
-                new DVD(3, "DVD LG", 399.90, "dvd"),
-                new Guitarra(4, "Guitarra Gibson", 799.90, "guitarra"),
-                new Videogame(5, "Playstation 5", 3399.90, "videogame")
-            };
+            //INICIALIZANDO PRODUTOS DE BASE QUE PODERÃO TER SEUS VALORES REAJUSTADOS
+            Produto televisorBase = new Televisor(1, "Tv Samsung", 1099.90, "televisor");
+            Produto dvdBase = new DVD(2, "DVD LG", 399.90, "dvd");
+            Produto guitarraBase = new Guitarra(3, "Guitarra Gibson", 799.90, "guitarra");
+            Produto videogameBase = new Videogame(4, "Playstation 5", 3399.90, "videogame");
+            Produto notebookBase = new Notebook(5, "Notebook Gamer Dell", 4589.90, "notebook");
+
+            List<Produto> produtosBase = new List<Produto>();   
+            produtosBase.Add(televisorBase);
+            produtosBase.Add(notebookBase);
+            produtosBase.Add(dvdBase);
+            produtosBase.Add(guitarraBase);
+            produtosBase.Add(videogameBase);
 
             //AINDA NÃO CONSEGUI FAZER COM QUE OS PREÇOS NÃO SEJAM ALTERADOS NA CESTA DE COMPRAS
             Produto televisor = new Televisor(0, null, 0, "televisor");
