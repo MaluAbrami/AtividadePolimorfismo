@@ -8,7 +8,7 @@ namespace AtividadePolimorfismo
 {
     internal class Videogame : Produto
     {
-        public Videogame(int id, string name, double price) : base(id, name, price)
+        public Videogame(int id, string name, double price, string tipo) : base(id, name, price, tipo)
         {
         }
 

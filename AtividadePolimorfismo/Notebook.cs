@@ -8,7 +8,7 @@ namespace AtividadePolimorfismo
 {
     internal class Notebook : Produto
     {
-        public Notebook(int id, string name, double price) : base(id, name, price)
+        public Notebook(int id, string name, double price, string tipo) : base(id, name, price, tipo)
         {
         }
 
